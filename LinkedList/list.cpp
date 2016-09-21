@@ -4,8 +4,8 @@ void createList(List &L) {
     /**
     * FS : first(L) diset Nil
     */
-    //-------------your code here-------------
-    // NIM : 
+    first(L) = Nil;
+    // NIM : 1301154127(Adhyfa F H)
     
 
     //----------------------------------------
@@ -29,8 +29,8 @@ void dealokasi(address &P) {
     /**
     * FS : menghapus elemen yang ditunjuk oleh P (delete)
     */
-    //-------------your code here-------------
-    // NIM : 
+    delete(P);
+    // NIM : 1301154127(Adhyfa)
 
 	
     //----------------------------------------
@@ -120,8 +120,12 @@ void printInfo(List L) {
     /**
     * FS : menampilkan info seluruh elemen list L
     */
-    //-------------your code here-------------
-    // NIM : 
+    address P = first(L);
+    while =(p != Nil){
+    	cout<<" "info(P)<<endl;
+    	P = next(P);
+    }
+    // NIM : 1301154127 (Adhyfa F H)
 
 	
     //----------------------------------------
