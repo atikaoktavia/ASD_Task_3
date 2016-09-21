@@ -51,7 +51,7 @@ struct elmlist{
 
 struct List{
     //------------- your code here -----------
-    
+    address first;
 	
     //----------------------------------------
 };
