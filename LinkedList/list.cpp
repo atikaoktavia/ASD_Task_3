@@ -18,9 +18,10 @@ address alokasi(infotype x) {
 
     address P;
     //-------------your code here-------------
-    // NIM : 
-
-
+    // NIM : 1301154379
+    address P = new ElmList;
+    info(P)   = x;
+    next(P)   = Nil;
     //----------------------------------------
     return P;
 }
@@ -59,9 +60,20 @@ void insertLast(List &L, address P) {
     * FS : elemen yang ditunjuk P menjadi elemen terakhir pada List L
     */
     //-------------your code here-------------
-    // NIM : 
+    // NIM : 1301154379
     
-	
+     if (first(L) == Nil)
+    {
+        first(L) = P;
+    }
+    else
+    {
+        address q = first(L);
+        while (q->next != Nil)
+            q = q->next;
+        q->next = P;
+
+    }	
     //----------------------------------------
 }
 
@@ -87,7 +99,19 @@ void deleteFirst(List &L, address &P) {
     * FS : elemen pertama di dalam List L dilepas dan disimpan/ditunjuk oleh P
     */
     //-------------your code here-------------
+    // NIM : 
+    
+    //----------------------------------------
+}
+
+void deleteLast(List &L, address &P) {
+    /**
+    * IS : List L mungkin kosong
+    * FS : elemen tarakhir di dalam List L dilepas dan disimpan/ditunjuk oleh P
+    */
+    //-------------your code here-------------
     // NIM : 1301150057 (Ridhwan A)
+
     if(first(L)!=Nil)
     {
         P = first(L);
@@ -99,19 +123,7 @@ void deleteFirst(List &L, address &P) {
             P = q-> next;
             q->next=Nil;
         }
-    }
-    //----------------------------------------
-}
-
-void deleteLast(List &L, address &P) {
-    /**
-    * IS : List L mungkin kosong
-    * FS : elemen tarakhir di dalam List L dilepas dan disimpan/ditunjuk oleh P
-    */
-    //-------------your code here-------------
-    // NIM : 
-
-	
+    }	
 
     //----------------------------------------
 }
